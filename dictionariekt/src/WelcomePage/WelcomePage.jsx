@@ -1,11 +1,14 @@
 import React from 'react'
 import NaviBar from '../common/NaviBar'
-import bookworm from "../icons/bookworm.png"
+import SearchField from './SearchField'
+import './WelcomePage.scss'
+
 
 function WelcomePage() {
     return (
-        <div>
+        <div className="welcome">
             <NaviBar/>
+            <SearchField/>
         </div>
     )
 }
