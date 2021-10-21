@@ -1,69 +1,81 @@
-@import '../Variables.scss';
+@import "../Variables.scss";
 
-body{
-    h4{
-        margin: 0px;
-    }
+body {
+  h4 {
+    margin: 0px;
+  }
 }
-.searchField{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20em;
-}
-
-.searchField input{
-    border: 0px;
-    outline: none;
-    padding: 0.5em 1em;
-    font-size: 28px;
-    font-family: $title-font;
+.searchField {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10em;
 }
 
-.searchField h4{
-    font-size: 28px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0.5em 1em;
+.searchField input {
+  border: 0px;
+  outline: none;
+  padding: 0.5em 1em;
+  font-size: 28px;
+  font-family: $title-font;
+  text-align: center;
 }
 
-.searchField button{
-    border: 0px;
-    padding: 0.5em 1em;
-    font-size: 28px;
-    font-family: $title-font;
-    cursor: pointer;
-    background-color: $red-dark;
-    color: white;
+.searchField h4 {
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.5em 1em;
+}
+
+.searchField button {
+  border: 0px;
+  padding: 0.5em 1em;
+  font-size: 28px;
+  font-family: $title-font;
+  cursor: pointer;
+  background-color: $red-dark;
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {
-    .searchField{
-        display:inline;
-        position: absolute;
-        width: 100%;
-    }
-    .searchField input{
-        padding: 0px;
-        margin: 0px;
-        width: 100%;
-        padding-top: 0.3em;
-        padding-bottom: 0.3em;
-        margin-bottom: 1em;
-        padding: 0.5em 1em;
-    }
-    .searchField button{
-        padding: 0px;
-        margin: 0px;
-        position: absolute;
-        right: 6.5em;
-        padding: 0.5em 1.4em;
-    }
-    .searchField h4{
-        text-align: center;
-    }
+  .searchField {
+    display: inline;
+    position: absolute;
+    width: 100%;
+    margin-top: 20em;
+  }
+  .searchField input {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    padding: 0.4em 0px;
+    margin: 0px;
+    margin-bottom: 1em;
+    display: flex;
+    // padding-top: 0.3em;
+    // padding-bottom: 0.3em;
+    // margin-bottom: 1em;
+    // padding: 0.5em 1em;
+    text-align: center;
+  }
+  .searchField button {
+    padding: 0px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em 1.4em;
+  }
+  .searchField h4 {
+    text-align: center;
+  }
 
-    .buttonsdiv{
-        background-color: black;
-        position: relative;
-    }
+  .buttonsdiv {
+    position: relative;
+    width: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

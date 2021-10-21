@@ -1,14 +1,29 @@
-import React from 'react'
-import './SearchField.scss'
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./SearchField.scss";
 
 function SearchField() {
-    return (
-        <div className="searchField">
-        <h4>What's the meaning of </h4>
-           <input></input>
-            <div className="buttonsdiv"><button>?</button></div>
-        </div>
-    )
+  const [inputText, setinputText] = useState("dictionary");
+  const getInputTextHandler = (e) => {
+    console.log("çalıştı");
+    setinputText(e.target.value);
+  };
+
+  return (
+    <div className="searchField">
+      <h4>What's the meaning of </h4>
+      <input
+        value={inputText}
+        onChange={getInputTextHandler}
+        type="text"
+      ></input>
+      <div className="buttonsdiv">
+        <Link to={"/word/" + inputText}>
+          <button>?</button>
+        </Link>
+      </div>
+    </div>
+  );
 }
 
-export default SearchField
+export default SearchField;

@@ -1,15 +1,15 @@
-import React from 'react';
-import Avatar from './Avatar';
-import LogoText from './LogoText';
-import './NaviBar.scss';
+import React from "react";
+import Avatar from "./Avatar";
+import LogoText from "./LogoText";
+import "./NaviBar.scss";
 
 function NaviBar() {
-    return (
-        <div className="navibar">
-        <LogoText/>
-        <Avatar/>
-        </div>
-    )
+  return (
+    <div className="navibar">
+      <LogoText />
+      <Avatar />
+    </div>
+  );
 }
 
-export default NaviBar
+export default NaviBar;

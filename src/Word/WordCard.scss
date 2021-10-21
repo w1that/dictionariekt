@@ -1,0 +1,138 @@
+@import "../Variables.scss";
+
+.card {
+  background-color: #222831;
+  margin-bottom: 1em;
+  width: 60%;
+  margin: 1em auto;
+  padding: 1em 2em;
+  font-size: 22px;
+  color: #eeeeee;
+  letter-spacing: 1px;
+  border-radius: 24px;
+}
+.card .word {
+  text-align: center;
+  font-family: $word-font;
+}
+.card .phonetic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  background-color: #393e46;
+  border-radius: 24px;
+  button {
+    margin-left: 1em;
+    padding: 0.7em;
+    border-radius: 50%;
+    border: 0px;
+    cursor: pointer;
+  }
+}
+
+.definitions {
+  background: #000;
+  padding: 0.3em;
+  border-radius: 5px;
+}
+
+.meanings {
+  background: #000;
+  padding: 0.3em;
+  border-radius: 5px;
+}
+
+.type {
+  background: #393e46;
+  padding: 0.3em;
+  border-radius: 5px;
+}
+
+.definition {
+  background-color: #393e46;
+  padding: 1em;
+  border-radius: 24px;
+  margin-bottom: 1em;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.synonyms {
+  background-color: #222831;
+  margin: 0px;
+  padding: 1em;
+  h3 {
+    margin: 0px;
+    color: #00adb5;
+  }
+}
+
+.synonymsdiv {
+  display: flex;
+  justify-content: flex-start;
+  overflow: auto;
+  border-radius: 10px 10px 0px 0px;
+}
+@media only screen and (max-width: 600px) {
+  .card {
+    margin-bottom: 1em;
+    width: 80%;
+    margin: 0.5em auto;
+    padding: 0.5em 1em;
+    font-size: 22px;
+    color: #eeeeee;
+    letter-spacing: 1px;
+    border-radius: 0px;
+  }
+  .card .word {
+    text-align: center;
+    font-family: $word-font;
+  }
+  .card .phonetic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    background-color: #393e46;
+    border-radius: 5px;
+    button {
+      margin-left: 1em;
+      padding: 0.7em;
+      border-radius: 50%;
+      border: 0px;
+      cursor: pointer;
+    }
+  }
+
+  .definition {
+    background-color: #393e46;
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  .synonyms {
+    background-color: #222831;
+    margin: 0px;
+    padding: 1em;
+    h3 {
+      font-size: 20px;
+      margin: 0px;
+      color: #00adb5;
+    }
+  }
+
+  .synonymsdiv {
+    display: flex;
+    justify-content: flex-start;
+    overflow: auto;
+    border-radius: 5px 5px 0px 0px;
+  }
+}

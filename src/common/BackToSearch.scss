@@ -1,0 +1,17 @@
+
+.backtosearch{
+    position: fixed;
+    top: 0px;
+}
+
+.backtosearch .backtosearchbutton{
+    color: "#EEEEEE"; 
+    background: "#393E46";
+    cursor: "pointer";
+}
+
+@media only screen and (max-width: 600px) {
+    .backtosearch{
+        top: 44em;
+    }
+}

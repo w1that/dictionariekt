@@ -13,12 +13,13 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: $gray-dark;
+    height: 3em;
 }
 
 .logo-title{
     cursor: pointer;
     font-family: $title-font;
-    padding: 0.4em 1em;
+    padding: 0em 1em;
     color: $red-medium;
 }
 
@@ -27,9 +28,9 @@ body{
     justify-content: center;
     align-items: center;
     background-color: $red-medium;
-    padding: 0.4em 2em;
-    margin: 0px 4em;
     cursor: pointer;
+    height: 3em;
+    margin-right: 1em;
 }
 
 
@@ -39,26 +40,46 @@ body{
 }
 
 .avatar img{
-    width: 4em;
+    width: 2em;
 }
 
 
 @media only screen and (max-width: 600px) {
-    .avatar{
-        margin:0px;
-        padding: 0px;
-        padding: 0.5em 1em;
-        img{
-            width: 3em;
-        }
-        h3{
-            font-size: 14px;
-        }
-    }
+    
+.navibar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $gray-dark;
+    height: 3em;
+}
 
-    .logo-title{
-        padding: 0px;
-        margin-left: 1em;
-        font-size: 20px;
-    }
+.logo-title{
+    cursor: pointer;
+    font-family: $title-font;
+    padding: 0em 1em;
+    color: $red-medium;
+    font-size: 20px;
+}
+
+.avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $red-medium;
+    cursor: pointer;
+    height: 3em;
+    margin-right: 0em;
+}
+
+
+.avatar h3{
+    color: white;
+    font-family: $title-font;
+}
+
+.avatar img{
+    width: 2em;
+}
+
   }
