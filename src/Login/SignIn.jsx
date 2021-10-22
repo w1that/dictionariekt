@@ -1,16 +1,37 @@
+import { getAuth } from '@firebase/auth';
 import React, { useEffect } from 'react'
 import { useHistory } from 'react-router';
-import { auth, signInWithGoogle } from '../firebase'
+import { logout, signInWithGoogle } from '../firebase'
+import google from '../icons/google.png'
+import './Signin.scss'
 
 function SignIn() {
-    const user = auth;
-    let history = useHistory()
+    let history = useHistory();
+    const signinHandler = async () => {
+      await signInWithGoogle();
+      const auth = getAuth();
+      const user = auth.currentUser;
+      console.log(user)
+      if (user) {
+        console.log(user)
+        history.push("/dictionary");
+      }
+    };
+
     useEffect(() => {
-        if (user) history.replace("/dictionary");
-      }, [user]);
+    const auth = getAuth();
+    const user = auth.currentUser;
+    console.log(user)
+    if(user){
+        history.push("/dictionary")
+    }
+    }, [])
+
     return (
         <div>
-            <button onClick={signInWithGoogle}>sign in with google</button>
+            <div className="signinDiv"><img width="50px" src={google}/>
+            <button className="signinButton" onClick={signinHandler}>sign in with google</button>
+            </div>
         </div>
     )
 }
