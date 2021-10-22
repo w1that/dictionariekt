@@ -37,7 +37,7 @@ function Word() {
   if (err) {
     history.push("/");
     alert(
-      "There is no such word in dictionary: " + "'" + word.toUpperCase() + "'"
+      "There is no such words in dictionary: " + "'" + word.toUpperCase() + "'"
     );
     setErr(false);
   }

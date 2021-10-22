@@ -10,7 +10,7 @@ function App() {
     
     <div className="App">
       <Route exact path="/"><WelcomePage/></Route>
-      <Route path="/word/:word"><Word /></Route>
+      <Route path="/word/:word" component={()=><Word key={window.location.pathname} />}></Route>
     </div>
   );
 }
