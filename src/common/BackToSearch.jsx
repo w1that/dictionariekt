@@ -36,17 +36,14 @@ function BackToSearch({ word }) {
   console.log(currentuser);
 
   useEffect(() => {
-    const checkIfExist = async()=>{
-      if (currentuser.favourites.length > 0) {
-        console.log("girdi")
-        currentuser.favourites.forEach((favWord) => {
-          if (favWord == word) {
-            setalreadyFav(true);
-          }
-        });
-      }
+    if (currentuser.favourites.length > 0) {
+      console.log("girdi")
+      currentuser.favourites.forEach((favWord) => {
+        if (favWord == word) {
+          setalreadyFav(true);
+        }
+      });
     }
-    checkIfExist()
   }, [currentuser]);
   console.log(alreadyFav);
   return (

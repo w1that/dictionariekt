@@ -71,5 +71,19 @@ const addWordToFavourite = async (word, user) => {
   });
 };
 
+const getFavoriteWords = async (uid) => {
+  if(auth){
+    const q = query(collection(db, "users"), where("uid", "==", uid));
+  const querySnapshot = await getDocs(q);
+  return querySnapshot.docs[0].data()
+  }
+};
 
-export { auth, db, signInWithGoogle, logout, addWordToFavourite };
+export {
+  auth,
+  db,
+  signInWithGoogle,
+  logout,
+  addWordToFavourite,
+  getFavoriteWords,
+};

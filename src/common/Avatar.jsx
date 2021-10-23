@@ -5,11 +5,11 @@ import bookworm from '../icons/bookworm.png'
 
 function Avatar({ user }) {
   return (
-    <div classNames="dropdown">
+    <div className="dropdown">
       <button className="dropbtn">{user.displayName}</button>
       
       <div className="dropdown-content">
-        <a href="#">My Words</a>
+        <a href="/mywords">My Words</a>
         <a onClick={()=>logout()} href="/">Log Out</a>
       </div>
     </div>
