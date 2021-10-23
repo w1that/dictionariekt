@@ -27,7 +27,7 @@ function MyWords() {
       
       <div className="wordsList">
       {words.map((word) => {
-        return <div onClick={()=>history.push(`/dictionary/${word}`)} className="favouriteWord"><h1 key={nanoid()}>{word}</h1></div>
+        return <Link style={{ textDecoration: 'none' }} to={`/word/${word}`}><div className="favouriteWord"><h1 key={nanoid()}>{word}</h1></div></Link>
       })}
       </div>
       </div>

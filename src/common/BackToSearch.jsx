@@ -17,6 +17,7 @@ function BackToSearch({ word }) {
     const auth = getAuth();
     const user = auth.currentUser;
     addWordToFavourite(word, user);
+    alert("successfully added")
     history.push('/dictionary')
   };
   useEffect(() => {

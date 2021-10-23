@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./SearchField.scss";
 
 function SearchField() {
-  const [inputText, setinputText] = useState("dictionary");
+  const [inputText, setinputText] = useState("");
   const getInputTextHandler = (e) => {
     console.log("çalıştı");
     setinputText(e.target.value);
@@ -16,10 +16,11 @@ function SearchField() {
         value={inputText}
         onChange={getInputTextHandler}
         type="text"
+        placeholder="dictionary"
       ></input>
       <div className="buttonsdiv">
         <Link to={"/word/" + inputText}>
-          <button>?</button>
+          {inputText?<button >?</button>:<button disabled>?</button>}
         </Link>
       </div>
     </div>
