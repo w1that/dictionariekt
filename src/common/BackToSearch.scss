@@ -1,74 +1,73 @@
-
-.sideMenu{
-    position: fixed;
-    top: 20em;
-    left: 10em;
+.sideMenu {
+  position: fixed;
+  bottom: 20em;
+  left: 10em;
 }
 
-.sideMenuElements{
-    padding: 1em;
+.sideMenuElements {
+  padding: 1em;
 }
 
-.back{
-    width: 70px;
-    margin-bottom: 4em;
-    transition: 0.3s;
+.back {
+  width: 70px;
+  margin-bottom: 4em;
+  transition: 0.3s;
 }
-.favourite{
-    width: 70px;
-    transition: 0.3s;
+.favourite {
+  width: 70px;
+  transition: 0.3s;
 }
 
-.back:hover{
-    width: 80px;
-    cursor: pointer;
-    transition: 0.3s;
+.back:hover {
+  width: 80px;
+  cursor: pointer;
+  transition: 0.3s;
 }
-.favourite:hover{
-    width: 80px;
-    cursor: pointer;
-    transition: 0.3s;
+.favourite:hover {
+  width: 80px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 @media only screen and (max-width: 600px) {
-    .sideMenu{
-        position: fixed;
-        top: 40em;
-        left: 0em;
-        width: 100%;
-    }
+  .sideMenu {
+    position: fixed;
+    bottom:1em;
+    left: 0em;
+    width: 100%;
+  }
 
-    .sideMenuElements{
-        padding: 1em;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        border-radius: 0px;
-       border-top: 2px solid white;
-       border-bottom: 2px solid white;
-        background-color: #3d3d3d;
-        width: 100%;
-    }
+  .sideMenuElements {
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    background-color: #3d3d3d;
+    width: 100%;
+  }
 
-    .back{
-        width: 40px;
-        margin-right: 4em;
-        transition: 0.3s;
-        margin-bottom: 0px;
-    }
-    .favourite{
-        width: 40px;
-        transition: 0.3s;
-    }
-    
-    .back:hover{
-        width: 50px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
-    .favourite:hover{
-        width: 50px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
+  .back {
+    width: 40px;
+    margin-right: 4em;
+    transition: 0.3s;
+    margin-bottom: 0px;
+  }
+  .favourite {
+    width: 40px;
+    transition: 0.3s;
+  }
+
+  .back:hover {
+    width: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .favourite:hover {
+    width: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
 }

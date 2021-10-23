@@ -44,7 +44,7 @@ function Word() {
 
   return (
     <div>
-      <BackToSearch />
+      <BackToSearch word={word} />
       {data.map((word) => {
         return (
           <div className="cardcontainer" key={nanoid()}>

@@ -21,7 +21,6 @@ function SignIn() {
     useEffect(() => {
     const auth = getAuth();
     const user = auth.currentUser;
-    console.log(user)
     if(user){
         history.push("/dictionary")
     }
